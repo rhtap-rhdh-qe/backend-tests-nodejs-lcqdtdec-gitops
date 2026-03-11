@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: backend-tests-nodejs-lcqdtdec
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: backend-tests-nodejs-lcqdtdec 
+  name: backend-tests-nodejs-lcqdtdec
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: backend-tests-nodejs-lcqdtdec 
